@@ -1,0 +1,16 @@
+{
+  "name": "arrays",
+  "version": "1.0.0",
+  "description": "Learning about Arrays",
+  "main": "simpleArrayOps.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test",
+    "arrays",
+    "iterating"
+  ],
+  "author": "Les Miklos",
+  "license": "MIT"
+}
