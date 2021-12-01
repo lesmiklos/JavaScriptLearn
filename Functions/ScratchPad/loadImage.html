@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Image Into Web Page</title>
+</head>
+<body>
+    <img source id ="sailboat.jpg" width = "680" />
+    <script>
+        pictureGet()
+        .then(response=>{console.log('Das ist gut!');  })
+        .catch(error =>{
+            console.log('error');
+            console.error(error);
+        });
+
+        async function pictureGet(){
+            const response = await fetch('sailboat.jpg');
+            const blob = await response.blob();
+            document.getElementById('sailboat.jpg').src= URL.createObjectURL(blob)
+        }
+    </script>
+</body>
+</html>

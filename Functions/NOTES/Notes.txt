@@ -1,0 +1,24 @@
+
+//Example of iterating the properties of an object and printing it to a web page 
+
+<p>Display object properties:</p>
+
+<p id="demo"></p>
+
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York",
+  mother: "Mariposa"
+};
+
+let txt = "";
+for (let x in person) {
+  txt += person[x] + " " ;    // Creates an array of 'person' properties (spaced using the "  ")
+};
+
+document.getElementById("demo").innerHTML = txt;
+
+----------------------------------------------------------------------------------------------------------------
+
+create JSON file to save file parameters: --  'npm init'  in the text editor
